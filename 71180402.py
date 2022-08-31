@@ -23,10 +23,10 @@ def divide(x, y):
 # print("4.Bagi")
 
 # Meminta input dari user
-input_menu = input("Masukkan pilihan(1/2/3/4): ")
+# input_menu = input("Masukkan pilihan(1/2/3/4): ")
 
-num1 = int(input("Masukkan bilangan pertama: "))
-num2 = int(input("Masukkan bilangan kedua: "))
+# num1 = int(input("Masukkan bilangan pertama: "))
+# num2 = int(input("Masukkan bilangan kedua: "))
 
 #while input_menu !="q" and input_menu !="Q":
 while True:
@@ -35,26 +35,31 @@ while True:
     print("2.Kurang")
     print("3.Kali")
     print("4.Bagi")
+    input_menu = input("Masukkan pilihan(1/2/3/4): ")
+
     if input_menu == '1':
-        print(num1,"+",num2,"=", add(num1,num2))
+       
         num1 = int(input("Masukkan bilangan pertama: "))
         num2 = int(input("Masukkan bilangan kedua: "))
-        input_menu = input("Masukkan pilihan(1/2/3/4): ")
+        print(num1,"+",num2,"=", add(num1,num2))  
     elif input_menu == '2':
+        
+        num1 = int(input("Masukkan bilangan pertama: "))
+        num2 = int(input("Masukkan bilangan kedua: "))
         print(num1,"-",num2,"=", subtract(num1,num2))
-        num1 = int(input("Masukkan bilangan pertama: "))
-        num2 = int(input("Masukkan bilangan kedua: "))
-        input_menu = input("Masukkan pilihan(1/2/3/4): ")
+        
     elif input_menu == '3':
+        
+        num1 = int(input("Masukkan bilangan pertama: "))
+        num2 = int(input("Masukkan bilangan kedua: "))
         print(num1,"*",num2,"=", multiply(num1,num2))
-        num1 = int(input("Masukkan bilangan pertama: "))
-        num2 = int(input("Masukkan bilangan kedua: "))
-        input_menu = input("Masukkan pilihan(1/2/3/4): ")
+        
     elif input_menu == '4':
-        print(num1,"/",num2,"=", divide(num1,num2))
+        
         num1 = int(input("Masukkan bilangan pertama: "))
         num2 = int(input("Masukkan bilangan kedua: "))
-        input_menu = input("Masukkan pilihan(1/2/3/4): ")
+        print(num1,"/",num2,"=", divide(num1,num2))
+        
 
     elif input_menu=="Q":
         break
